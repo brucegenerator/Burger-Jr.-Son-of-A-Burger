@@ -11,15 +11,15 @@ $(document).ready(function() {
     });
   });
 });
-  var burgerSound = new Audio("http://www.moviewavs.com/0053148414/WAVS/Movies/Pulp_Fiction/burger.wav");
-  $('.devour-form').on("click", function(event) {
-    event.preventDefault();
-    burgerSound.play();
-  })
+  // var burgerSound = new Audio("http://www.moviewavs.com/0053148414/WAVS/Movies/Pulp_Fiction/burger.wav");
+  // $('.devour-form').on("click", function(event) {
+  //   event.preventDefault();
+  //   burgerSound.play();
+  // })
 
-  var bevSound = new Audio("http://www.moviewavs.com/0053148414/WAVS/Movies/Pulp_Fiction/beverage.wav");
-  $("#text-enter-button").on("click", function(event) {
-    event.preventDefault();
-    bevSound.play();
-  });
+  // var bevSound = new Audio("http://www.moviewavs.com/0053148414/WAVS/Movies/Pulp_Fiction/beverage.wav");
+  // $("#text-enter-button").on("click", function(event) {
+  //   event.preventDefault();
+  //   bevSound.play();
+  // });
 
