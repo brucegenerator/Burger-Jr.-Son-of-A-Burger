@@ -1,15 +1,18 @@
-var Sequelize = require('sequelize');
+// var Sequelize = require('sequelize');
 
+module.exports = function(sequelize, Datatypes) {
+    var Burger = sequelize.define("Burger", {
+        burger_name: Datatypes.STRING,
+        devoured: {
+            type: Datatypes.BOOLEAN,
+            defaultValue: false
+        }
+    }, {
+        classMethods: {
+            associate: function(models) {
 
-const Burger = sequelize.define("Burger", {
-        burger_name:{
-            type: Sequelize.STRING,
-            allowNull: false
-        },
-        devoured:{
-            type: Sequelize.BOOLEAN,
-            defaultValue: false,
-            allowNull: false            
+            }
         }
     });
-module.exports = Burger;
+    return Burger;
+};
